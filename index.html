@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fl">
+
+        <img src="logo.png" style="border-radius: 100%;width: 160px;">
+        <h1>Ask me a Question ?</h1>
+        <form name="tod">
+        <input name="input" placeholder="Type Something">
+        <div class="gh">
+        <button onclick="acc()">Accept</button>
+        <button onclick="dec()">Decline</button>
+    </form>
+    </div>
+    </div>
+
+    <script>
+
+    var inpu=document.querySelector("input");
+        function acc()
+        {
+            let inp = document.tod.input.value;
+            if(inp=="what is your age")
+        {
+            alert("Accepted");
+        }
+        else
+        {
+            alert("Declined");
+        }
+    
+        }
+        function dec()
+        {
+            
+            alert("Declined");
+        }
+    </script>
+</body>
+</html>
